@@ -1,0 +1,13 @@
+
+
+def template():
+    criar_venv = 'python -m venv .venv'
+    ativar_venv = '.\.venv\Scripts\Activate.ps1'
+
+    update_pip = 'python.exe -m pip install --upgrade pip'
+
+    install_requirements = 'pip install -r requirements.txt'
+    return criar_venv, ativar_venv, update_pip, install_requirements
+
+
+template()
